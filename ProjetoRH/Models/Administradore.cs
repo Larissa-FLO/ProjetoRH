@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoRH.Models
 {
@@ -9,7 +10,7 @@ namespace ProjetoRH.Models
         {
             FolhaPagamentos = new HashSet<FolhaPagamento>();
         }
-
+        [Key]
         public int IdAdm { get; set; }
         public int? IdFuncionario { get; set; }
 

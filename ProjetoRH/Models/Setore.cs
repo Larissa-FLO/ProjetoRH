@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoRH.Models
 {
@@ -10,6 +11,7 @@ namespace ProjetoRH.Models
             Gerentes = new HashSet<Gerente>();
         }
 
+        [Key]
         public int CodSetor { get; set; }
         public string NomeSetor { get; set; } = null!;
 

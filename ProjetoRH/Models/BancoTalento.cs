@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoRH.Models
 {
     public partial class BancoTalento
     {
+        [Key]
         public int IdFuncionario { get; set; }
         public string NomeFuncionario { get; set; } = null!;
         public int Cpf { get; set; }

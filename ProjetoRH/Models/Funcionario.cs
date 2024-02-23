@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoRH.Models
 {
@@ -12,6 +13,7 @@ namespace ProjetoRH.Models
             Treinamentos = new HashSet<Treinamento>();
         }
 
+        [Key]
         public int IdFuncionario { get; set; }
         public string NomeFuncionario { get; set; } = null!;
         public DateTime DataNasc { get; set; }

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoRH.Models
 {
     public partial class FolhaPagamento
     {
+        [Key]
         public int IdLancamento { get; set; }
         public int? ResponsavelLancamento { get; set; }
         public int? IdFuncionario { get; set; }

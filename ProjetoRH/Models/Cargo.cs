@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoRH.Models
 {
@@ -11,6 +12,8 @@ namespace ProjetoRH.Models
             Funcionarios = new HashSet<Funcionario>();
             FuncionariosInativos = new HashSet<FuncionariosInativo>();
         }
+
+        [Key]
 
         public int CodCargo { get; set; }
         public string NomeCargo { get; set; } = null!;
